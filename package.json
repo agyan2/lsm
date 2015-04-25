@@ -1,7 +1,7 @@
 {
   "name": "lsm",
   "version": "1.0.0",
-  "description": "",
+  "description": "lsm",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.12.3",
