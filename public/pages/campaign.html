@@ -1,10 +1,42 @@
-
+<div class="container">
 
 	<div class="jumbotron">
-	<h1>Reward Page</h1>
-	
-	<p>{{ message }}</p>
-        
-    </div>
+		<h1>Campaign List Page</h1>
 
+		<p>{{ message }}</p>
+
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h1 class="panel-title">Campaign Form</h1>
+				</div>
+				<div class="panel-body">
+
+
+					
+					<form role="form">
+						<div class="form-group">
+							<h4><label for="campaignId" class="label label-primary">Campaign Id:</label></h4>
+							<input ng-model="campaignId" type="campaignId" class="form-control" id="campaignId" placeholder="Enter Campaign Id">
+						</div>
+						<div class="form-group">
+							<h4><label for="campaignName" class="label label-primary">Campaign Name:</label></h4>
+							<input ng-model="campaignName" type="campaignName" class="form-control" id="campaignName" placeholder="Enter Campaign Name">
+						</div>
+						<button type="submit" class="btn btn-primary btn-md" ng-click="createCampaign()">Submit</button>
+					</form>
+
+
+
+
+				</div>
+			</div>
+		</div><!-- /.col-sm-4 -->
+	</div>  
+
+
+</div>
 

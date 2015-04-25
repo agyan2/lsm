@@ -1,11 +1,42 @@
-
+<div class="container">
 
 	<div class="jumbotron">
-	<h1>Reward Page</h1>
-	
-	<p>{{ message }}</p>
-        
-    </div>
+		<h1>Catalog List Page</h1>
+
+		<p>{{ message }}</p>
+
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h1 class="panel-title">Catalog Form</h1>
+				</div>
+				<div class="panel-body">
 
 
+					
+					<form role="form">
+						<div class="form-group">
+							<h4><label for="catalogId" class="label label-primary">Catalog Id:</label></h4>
+							<input ng-model="catalogId" type="catalogId" class="form-control" id="catalogId" placeholder="Enter Catalog Id">
+						</div>
+						<div class="form-group">
+							<h4><label for="catalogName" class="label label-primary">Catalog Name:</label></h4>
+							<input ng-model="catalogName" type="catalogName" class="form-control" id="catalogName" placeholder="Enter Catalog Name">
+						</div>
+						<button type="submit" class="btn btn-primary btn-md" ng-click="createCatalog()">Submit</button>
+					</form>
+
+
+
+
+				</div>
+			</div>
+		</div><!-- /.col-sm-4 -->
+	</div>  
+
+
+</div>
 
